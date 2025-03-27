@@ -537,31 +537,23 @@ section {
     color: var(--color-text);
 }
 
-@media (max-width: 1024px) {
-    .experience-items {
-        flex-direction: column; /* Stack items vertically */
-        gap: 1.5rem; /* Reduce spacing between items */
-    }
-
-    .experience-item {
-        min-width: 100%; /* Make items take full width */
-    }
-
-    .project__wrapper {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust grid for smaller screens */
-    }
-
-    .about .about-container {
-        flex-direction: column; /* Stack image and text vertically */
-        align-items: center;
-        text-align: center;
-    }
-
-    .about img {
-        margin-right: 0;
-        margin-bottom: 1.5rem; /* Add spacing below the image */
-    }
+.view-all-btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    background: linear-gradient(to right, var(--main-color), var(--second-color));
+    border: none;
+    border-radius: 3rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    margin-top: 2rem;
 }
 
-@media (max-width: 768px) {
-    header {
+.view-all-btn:hover {
+    background: linear-gradient(to right, var(--second-color), var(--main-color));
+    transform: scale(1.05);
+}
+
